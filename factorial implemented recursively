@@ -1,0 +1,17 @@
+//factorial recursive code;
+#include<iostream>
+using namespace std;
+int factorial(int n){
+if(n == 0){
+    return 1;
+}
+return n*factorial(n-1);
+}
+int main(){
+    cout<<"enter an number"<<endl;
+    int n;
+    cin>>n;
+    int k = factorial(n);
+    cout<<"the factorial of the given number is "<<k<<endl;
+    return 0;
+}
