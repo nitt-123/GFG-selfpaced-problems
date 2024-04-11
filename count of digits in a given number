@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int cnt(int x){
+int res = 0;
+while(x! = 0 ){
+res++;
+x = x/10;
+}
+return res;
+}
+int main(){
+cout<<"enter a number"<<endl;
+int n;
+cin>>n;
+cout<<"the number of digits in the entered number is"<<cnt(n)<<endl;
+return 0;
+}
