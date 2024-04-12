@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int gcd(int a, int b){
+if(b == 0){
+return a;
+} 
+return gcd(b,a%b);
+}
+
+int main(){
+cout<<"enter the two numbers two be finding the GCD"<<endl;
+int a,b;
+cin>>a>>b;
+cout<<"the gcd of the two numbers are"<<gcd(a,b)<<endl;
+return 0;
+}
