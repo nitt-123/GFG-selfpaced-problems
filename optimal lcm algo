@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int gcd(int a, int b){
+    if(b == 0){
+        return a;
+    }
+    return gcd(b,a%b);
+}
+int lcm(int a, int b){
+   int k = (a*b)/gcd(a,b);
+   return k;
+}
+int main(){
+    cout<<"enter the two numbers whose LCM you need"<<endl;
+    int a,b;
+    cin>>a>>b;
+    cout<<"the lcm of the two numbers are "<<lcm(a,b);
+    return 0;
+}
